@@ -1,0 +1,110 @@
+
+<html>
+    <head>
+        <title>Create An Account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!---CSS--->
+        <style>
+            * {
+                box-sizing: content-box;
+            }
+
+            body {
+                margin: 0;
+                background: #2C3539;
+            }
+
+            .topnav {
+                overflow: hidden;
+                text-align: center;
+                background-color: #737CA1;
+                padding: 12px 12px 12px 12px;
+                border: black;
+                font-family: Arial, sans-serif;
+            }
+
+            .signup-form {
+                overflow: hidden;
+                padding: 12px 12px 12px 12px;
+                background: silver;
+                width: 50%;
+                height: auto;
+                position: relative;
+                top: 90px;
+                bottom: 30px;
+                margin: auto;
+                border-radius: 5px;
+            }
+
+            .signup-form label{
+                background: #E5E4E2;
+                padding: 5px;
+                border-radius: 10px;
+                font-family: Verdana, sans-serif;
+            }
+            .signup-form input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-family: Courier, monospace;
+            }            
+
+            .signup-form input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                text-align: center;
+                font-family: Verdana, sans-serif;
+            }
+            
+            .signup-form input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="/homepage/homepage.html">Home</a>
+            <a href="/homepage/recruiterHomepage.html">Recruiter Home</a>
+            <a href="/search/jobSearch.html">Job Search</a>
+            <a href="/search/applicantSearch.html">Applicant Search</a>
+            <a href="/Login/Signup.html" class="right">Sign Up</a>
+            <a href="/Login/Login.html" class="right">Log In</a>
+          </div>
+
+        <div class="topnav">
+            <h1>Create an Account!</h1>
+        </div>
+        <div class="signup-form">
+            <form action="Signup.php" method="post">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email...">
+
+                <label for="fName">First Name</label>
+                <input type="text" id="fName" name="fName" placeholder="Enter your first name...">
+
+                <label for="lName">Last Name</label>
+                <input type="text" id="lName" name="lName" placeholder="Enter your last name...">
+
+                <label for="userPass">Password</label>
+                <input type="password" id="userPass" name="userPass" placeholder="Enter a password...">
+
+                <label for="cnfrmPass">Repeat your Password</label>
+                <input type="password" id="cnfrmPass" name="cnfrmPass" placeholder="Confirm your password...">
+                
+                <button type="submit" id="signupsubmit" name="signupbtn">Signup</button>
+            </form>
+        </div>
+    </body>
+</html>

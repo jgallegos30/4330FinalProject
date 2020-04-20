@@ -1,0 +1,160 @@
+
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <style>
+
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: #737CA1;
+            }
+            form {
+                border: 3px solid black;
+                width: 75%;
+                position: relative;
+                margin: auto;
+            }
+                        
+            form label {
+                background: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                font-family: Courier, monospace;
+            }
+            
+            input[type=submit] {
+                background-color: grey;
+                color: white;
+                padding: 14px 20px;
+                border: none;
+                cursor: pointer;
+                width: 50%;
+            }
+
+            /*Small class to align "Employee Login" text*/
+            h2.center{
+                text-align: center;
+                background: white;
+                width: 10%;
+                margin: auto;
+            }
+
+            /*Adds VFX to input boxes of type text and password when selected using the cursor*/
+            input[type=text]:focus input[type=password]:focus{
+                border: 3px solid lightblue;
+            }
+
+            /*Adds VFX to input boxes of type text and password when hovered over using the cursor*/
+            input[type=text]:hover input[type=password]:hover{
+                border: 0.5px solid black;
+            }
+
+            a {
+                background-color: grey;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 50%;
+            }
+
+            a:hover {
+                opacity: 0.8;
+                border: 0.5px solid black;
+            }
+
+            /*Adds VFX to buttons when hovered over with the cursor*/
+            button:hover {
+                opacity: 0.8;
+                border: 0.5px solid black;
+            }
+
+            /*Properly aligns image container*/
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+
+            /*Sets the size and radius of the borders for the image*/
+            img.avatar {
+                width: 15%;
+                border-radius: 50%;
+                border-width: 4px;
+                border: lightblue;
+            }
+
+            .container {
+                padding: 12px;
+                float: center;
+            }
+            
+            .container a{
+                background-color: grey;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .container button{
+                background-color: grey;
+                color: white;
+                padding: 12px 12px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 50%;
+            }
+
+            .signup {
+                float: left;
+                padding: 12px;
+            }
+
+        </style>
+    </head>
+    <!-- HTML -->
+    <body>
+
+        <h2 class="center">Login</h2>
+
+        <form action="../index.php" method="POST">
+
+            <div class="imgcontainer">
+                <img src="4330LoginIcon.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="user_id"><b>Username</b></label>
+                <input type="text" placeholder="Enter your ID Number/E-Mail..." name="user_id" id="user_id" required>
+
+                <label for="user_pass"><b>Password</b></label>
+                <input type="password" placeholder="Enter your Password..." name="user_num" id="user_num" required>
+
+                <div id="container">
+                    <button type="submit" id="button1" name="login">Login</button>
+                    <a href="/EmployerLogin.html" id="admnbutton" style="text-decoration: none">Are you an Employer?</a>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Keep me signed in
+                </label>
+                <a href="/Signup.html" style="text-decoration: none">Create account?</a>
+            </div>
+        </form>
+
+    </body>
+</html>
